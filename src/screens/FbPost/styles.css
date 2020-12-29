@@ -3,13 +3,13 @@
 }
 
 
-#profile{
+.profile{
   width: 25px;
   height: 25px;
   border-radius: 50%;
 }
 
-#header{
+.header{
   display: flex;
   box-sizing: border-box;
   flex-direction: row ;
@@ -17,7 +17,7 @@
   padding-left: 10px;
 }
 
-#Text{
+.Text{
   font-size: .7em;
 }
 
@@ -42,7 +42,7 @@
   color: black
 }
 
-#main-div{
+.main-div{
   
   /* border: 1px solid black; */
   padding: 1%;
