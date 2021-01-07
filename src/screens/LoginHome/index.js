@@ -40,7 +40,7 @@ const useStyles = makeStyles((theme) => ({
 
 
 
-const LoginUi = () => {
+const LoginHome = () => {
   const [CheckOut, setCheckOut] = useState(false)
 
 
@@ -67,12 +67,19 @@ const LoginUi = () => {
   const handleMouseDownPassword = (event) => {
     event.preventDefault();
   };
+
+  const ViewHome = (props) =>{
+
+    setCheckOut(true)
+
+    console.log(CheckOut)
+    return {props}
+
+  }
+
   const showEntry = () => {
     
 
-setCheckOut(true)
-
-    console.log(CheckOut)
 
     const dataObj = {
       userEmail,
@@ -91,8 +98,7 @@ setCheckOut(true)
   }
 
   return (
-
-  <div> {!CheckOut ? <Container maxWidth="sm" >
+<Container maxWidth="sm" >
   <Card style={{ marginTop: '5%' }}>
     <CardActionArea>
       <h1 style={{
@@ -148,14 +154,14 @@ setCheckOut(true)
       <Button variant="contained" color="primary" onClick={showEntry} >
         Login
       </Button>
+      <Button variant="contained" color="primary" onClick={ViewHome} >
+        View Home
+      </Button>
     </CardActions>
   </Card>
-</Container> : <div> <HomePage/> </div> }
-    
-
-    </div>
+</Container>
   );
 }
 
 
-export default LoginUi;
+export default LoginHome;
