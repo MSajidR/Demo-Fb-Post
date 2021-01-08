@@ -24,224 +24,208 @@ import {
 import { Visibility, VisibilityOff, AccountCircle } from '@material-ui/icons';
 import { createStyles, Theme, makeStyles } from '@material-ui/core/styles';
 import { data } from '../../constants';
-<<<<<<< HEAD
 import HomePage from '../HomePage';
-=======
->>>>>>> df2534ab76bd5fd9bc9bb2e023cbfffed472ef14
 
 
-const useStyles = makeStyles((theme) => ({
-  margin: {
-    margin: theme.spacing(1),
-  },
-  IconButtonStyle: {
-    padding: 0
-  }
+// const useStyles = makeStyles((theme) => ({
+//   margin: {
+//     margin: theme.spacing(1),
+//   },
+//   IconButtonStyle: {
+//     padding: 0
+//   }
 
-})
-);
+// })
+// );
 
-
-<<<<<<< HEAD
-
-=======
->>>>>>> df2534ab76bd5fd9bc9bb2e023cbfffed472ef14
 const LoginUi = () => {
-  const [CheckOut, setCheckOut] = useState(false)
+//   const [CheckOut, setCheckOut] = useState(false)
 
 
-  const [userEmail, setUserEmail] = useState('');
-  const [userPassword, setUserPassword] = useState('');
+//   const [userEmail, setUserEmail] = useState('');
+//   const [userPassword, setUserPassword] = useState('');
 
-<<<<<<< HEAD
-=======
 
-  const [userEmail, setUserEmail] = useState('');
-  const [userPassword, setUserPassword] = useState('');
+//   const [userEmail, setUserEmail] = useState('');
+//   const [userPassword, setUserPassword] = useState('');
 
->>>>>>> df2534ab76bd5fd9bc9bb2e023cbfffed472ef14
-  const classes = useStyles();
 
-  const [values, setValues] = React.useState({
-    amount: '',
-    password: '',
-    weight: '',
-    weightRange: '',
-    showPassword: false,
-  });
-  const handleChange = (he) => (event) => {
-    setValues({ ...values, [he]: event.target.value });
-  };
+//   const classes = useStyles();
 
-  const handleClickShowPassword = () => {
-    setValues({ ...values, showPassword: !values.showPassword });
-  };
+//   const [values, setValues] = React.useState({
+//     amount: '',
+//     password: '',
+//     weight: '',
+//     weightRange: '',
+//     showPassword: false,
+//   });
+//   const handleChange = (he) => (event) => {
+//     setValues({ ...values, [he]: event.target.value });
+//   };
 
-  const handleMouseDownPassword = (event) => {
-    event.preventDefault();
-  };
-  const showEntry = () => {
+//   const handleClickShowPassword = () => {
+//     setValues({ ...values, showPassword: !values.showPassword });
+//   };
+
+//   const handleMouseDownPassword = (event) => {
+//     event.preventDefault();
+//   };
+//   const showEntry = () => {
     
-<<<<<<< HEAD
-=======
-    const dataObj = {
-      userEmail,
-      userPassword
-    }
+//     const dataObj = {
+//       userEmail,
+//       userPassword
+//     }
     
-    const strgFor = JSON.stringify(dataObj)
+//     const strgFor = JSON.stringify(dataObj)
 
-    localStorage.setItem('dataObject', strgFor);
-    // setUserEmail();
+//     localStorage.setItem('dataObject', strgFor);
+//     // setUserEmail();
     
-    // localStorage.setItem('Password', );
-    // setUserEmail();
+//     // localStorage.setItem('Password', );
+//     // setUserEmail();
     
-    console.log('submited ', strgFor)
-  }
+//     console.log('submited ', strgFor)
+//   }
 
-  return (
->>>>>>> df2534ab76bd5fd9bc9bb2e023cbfffed472ef14
+//   return (
 
-setCheckOut(true)
+// setCheckOut(true)
 
-    console.log(CheckOut)
+//     console.log(CheckOut)
 
-    const dataObj = {
-      userEmail,
-      userPassword
-    }
+//     const dataObj = {
+//       userEmail,
+//       userPassword
+//     }
     
-    const strgFor = JSON.stringify(dataObj)
+//     const strgFor = JSON.stringify(dataObj)
 
-    localStorage.setItem('dataObject', strgFor);
-    // setUserEmail();
+//     localStorage.setItem('dataObject', strgFor);
+//     // setUserEmail();
     
-    // localStorage.setItem('Password', );
-    // setUserEmail();
+//     // localStorage.setItem('Password', );
+//     // setUserEmail();
     
-    console.log('submited ', strgFor)
-  }
+//     console.log('submited ', strgFor)
+//   }
 
-  return (
+  return 
 
-  <div> {!CheckOut ? <Container maxWidth="sm" >
-  <Card style={{ marginTop: '5%' }}>
-    <CardActionArea>
-      <h1 style={{
-        color: "red",
-        textAlign: "center"
-      }}>Login Page</h1>
-      <CardContent>
+//   <div> {!CheckOut ? <Container maxWidth="sm" >
+//   <Card style={{ marginTop: '5%' }}>
+//     <CardActionArea>
+//       <h1 style={{
+//         color: "red",
+//         textAlign: "center"
+//       }}>Login Page</h1>
+//       <CardContent>
 
-<<<<<<< HEAD
-        <Grid container spacing={1} alignItems="flex-end">
-          <Grid item xs={12} spacing={1} alignItems="flex-end">
-            <InputLabel>User Email</InputLabel>
-            <Input
-              id="input-with-icon-adornment"
-              startAdornment={
-                <InputAdornment position="start">
-                  <AccountCircle />
-                </InputAdornment>
-              }
-              label="Enter Your Email"
+//         <Grid container spacing={1} alignItems="flex-end">
+//           <Grid item xs={12} spacing={1} alignItems="flex-end">
+//             <InputLabel>User Email</InputLabel>
+//             <Input
+//               id="input-with-icon-adornment"
+//               startAdornment={
+//                 <InputAdornment position="start">
+//                   <AccountCircle />
+//                 </InputAdornment>
+//               }
+//               label="Enter Your Email"
 
-              value={userEmail} 
-              onChange={e => setUserEmail(e.target.value)}
-            />
-          </Grid>
-          <br />
-          <Grid item xs={12} spacing={1} alignItems="flex-end">
-            <InputLabel htmlFor="standard-adornment-password">Password</InputLabel>
-            <Input
-              id="standard-adornment-password"
-              type={values.showPassword ? 'text' : 'password'}
-              value={values.password}
-              onChange={e => setUserPassword(e.target.value)}
-              startAdornment={
-                <InputAdornment position="start">
-                  <IconButton className={classes.IconButtonStyle}
-                    aria-label="toggle password visibility"
-                    onClick={handleClickShowPassword}
-                    onMouseDown={handleMouseDownPassword}
-                  >
-                    {values.showPassword ? <Visibility /> : <VisibilityOff />}
-                  </IconButton>
-                </InputAdornment>
-              }
-              value={userPassword} 
-=======
-            <Grid container spacing={1} alignItems="flex-end">
-              <Grid item xs={12} spacing={1} alignItems="flex-end">
-                <InputLabel>User Email</InputLabel>
-                <Input
-                  id="input-with-icon-adornment"
-                  startAdornment={
-                    <InputAdornment position="start">
-                      <AccountCircle />
-                    </InputAdornment>
-                  }
-                  label="Enter Your Email"
+//               value={userEmail} 
+//               onChange={e => setUserEmail(e.target.value)}
+//             />
+//           </Grid>
+//           <br />
+//           <Grid item xs={12} spacing={1} alignItems="flex-end">
+//             <InputLabel htmlFor="standard-adornment-password">Password</InputLabel>
+//             <Input
+//               id="standard-adornment-password"
+//               type={values.showPassword ? 'text' : 'password'}
+//               value={values.password}
+//               onChange={e => setUserPassword(e.target.value)}
+//               startAdornment={
+//                 <InputAdornment position="start">
+//                   <IconButton className={classes.IconButtonStyle}
+//                     aria-label="toggle password visibility"
+//                     onClick={handleClickShowPassword}
+//                     onMouseDown={handleMouseDownPassword}
+//                   >
+//                     {values.showPassword ? <Visibility /> : <VisibilityOff />}
+//                   </IconButton>
+//                 </InputAdornment>
+//               }
+//               value={userPassword} /> </Grid>
+//             <Grid container spacing={1} alignItems="flex-end">
+//               <Grid item xs={12} spacing={1} alignItems="flex-end">
+//                 <InputLabel>User Email</InputLabel>
+//                 <Input
+//                   id="input-with-icon-adornment"
+//                   startAdornment={
+//                     <InputAdornment position="start">
+//                       <AccountCircle />
+//                     </InputAdornment>
+//                   }
+//                   label="Enter Your Email"
 
-                  value={userEmail} 
-                  onChange={e => setUserEmail(e.target.value)}
-                />
-              </Grid>
-              <br />
-              <Grid item xs={12} spacing={1} alignItems="flex-end">
-                <InputLabel htmlFor="standard-adornment-password">Password</InputLabel>
-                <Input
-                  id="standard-adornment-password"
-                  type={values.showPassword ? 'text' : 'password'}
-                  value={values.password}
-                  onChange={e => setUserPassword(e.target.value)}
-                  startAdornment={
-                    <InputAdornment position="start">
-                      <IconButton className={classes.IconButtonStyle}
-                        aria-label="toggle password visibility"
-                        onClick={handleClickShowPassword}
-                        onMouseDown={handleMouseDownPassword}
-                      >
-                        {values.showPassword ? <Visibility /> : <VisibilityOff />}
-                      </IconButton>
-                    </InputAdornment>
-                  }
-                  value={userPassword} 
+//                   value={userEmail} 
+//                   onChange={e => setUserEmail(e.target.value)}
+//                 />
+//               </Grid>
+//               <br />
+//               <Grid item xs={12} spacing={1} alignItems="flex-end">
+//                 <InputLabel htmlFor="standard-adornment-password">Password</InputLabel>
+//                 <Input
+//                   id="standard-adornment-password"
+//                   type={values.showPassword ? 'text' : 'password'}
+//                   value={values.password}
+//                   onChange={e => setUserPassword(e.target.value)}
+//                   startAdornment={
+//                     <InputAdornment position="start">
+//                       <IconButton className={classes.IconButtonStyle}
+//                         aria-label="toggle password visibility"
+//                         onClick={handleClickShowPassword}
+//                         onMouseDown={handleMouseDownPassword}
+//                       >
+//                         {values.showPassword ? <Visibility /> : <VisibilityOff />}
+//                       </IconButton>
+//                     </InputAdornment>
+//                   }
+//                   value={userPassword} 
  
-                />
-              </Grid>
-            </Grid>
+//                 />
+//               </Grid>
+//             </Grid>
 
-          </CardContent>
-        </CardActionArea>
-        <CardActions>
-          <Button variant="contained" color="primary" onClick={showEntry}>
-            Login
-          </Button>
-        </CardActions>
-      </Card>
-    </Container>
+//           </CardContent>
+//         </CardActionArea>
+//         <CardActions>
+//           <Button variant="contained" color="primary" onClick={showEntry}>
+//             Login
+//           </Button>
+//         </CardActions>
+//       </Card>
+//     </Container>
 
->>>>>>> df2534ab76bd5fd9bc9bb2e023cbfffed472ef14
 
-            />
-          </Grid>
-        </Grid>
+//             />
+//           </Grid>
+//         </Grid>
 
-      </CardContent>
-    </CardActionArea>
-    <CardActions>
-      <Button variant="contained" color="primary" onClick={showEntry} >
-        Login
-      </Button>
-    </CardActions>
-  </Card>
-</Container> : <div> <HomePage/> </div> }
+//       </CardContent>
+//     </CardActionArea>
+//     <CardActions>
+//       <Button variant="contained" color="primary" onClick={showEntry} >
+//         Login
+//       </Button>
+//     </CardActions>
+//   </Card>
+// </Container> : <div> <HomePage/> </div> }
     
 
-    </div>
-  );
+//     </div>
+//   );
 }
 
 
