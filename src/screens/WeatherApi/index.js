@@ -12,8 +12,8 @@ const [posts, setPosts] = React.useState([]);
 axios.get(`https:/api.openweathermap.org/data/2.5/weather?q=London,uk&appid=${apiKey}`)
       .then(res => {
         const persons = res.data;
-        setPosts({ persons });
-      })
+      }).then(e => res.jason())
+      console.log(e)
 
 // axios.get(`https:api.openweathermap.org/data/2.5/weather?q=London,uk&appid=${apiKey}`)
 
@@ -36,10 +36,8 @@ axios.get(`https:/api.openweathermap.org/data/2.5/weather?q=London,uk&appid=${ap
 
     return(
         <div>
-        <h1>/r/reactjs</h1>
-        <ul>
-          {posts.map(post => <li>{post.name}</li>)}
-        </ul>
+        <h1>Axios Try</h1>
+      
       </div>
 
     );

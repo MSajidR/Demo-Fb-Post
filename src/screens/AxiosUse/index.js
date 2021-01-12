@@ -7,6 +7,7 @@ import { Timer10Sharp } from '@material-ui/icons';
 
 
 const AxiosUse = () => {
+
     let apiKey = "901d672d14c778eefb41af3fd3871f1f"
 const [data, setData] = useState([])
 const [inputData, setInputData] = useState([])
@@ -35,11 +36,12 @@ const showData = () => {
 
     return(
         <div>
+            <h1 style={{fontSize: '3em'}}> Weather App </h1>  
+
                 <h1>City Name</h1>
             <input type='text' placeholder='Enter City Name'  value={inputData} onChange={e=>{
                 setInputData(e.target.value)
                 console.log(e.target.value)} }/>
-            <h1> weather api try </h1>  
             <button onClick={geetData}>Done</button>
             {!isloading? 
             <div><h3>City Name: {data.name}</h3>
