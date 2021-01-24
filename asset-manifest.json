@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.26ad6034.chunk.css",
-    "main.js": "/static/js/main.8b4cdd79.chunk.js",
-    "main.js.map": "/static/js/main.8b4cdd79.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.0da34753.js",
-    "runtime-main.js.map": "/static/js/runtime-main.0da34753.js.map",
-    "static/js/2.a3f07647.chunk.js": "/static/js/2.a3f07647.chunk.js",
-    "static/js/2.a3f07647.chunk.js.map": "/static/js/2.a3f07647.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.26ad6034.chunk.css.map": "/static/css/main.26ad6034.chunk.css.map",
-    "static/js/2.a3f07647.chunk.js.LICENSE.txt": "/static/js/2.a3f07647.chunk.js.LICENSE.txt"
+    "main.css": "/Demo-Fb-Post/static/css/main.26ad6034.chunk.css",
+    "main.js": "/Demo-Fb-Post/static/js/main.8b4cdd79.chunk.js",
+    "main.js.map": "/Demo-Fb-Post/static/js/main.8b4cdd79.chunk.js.map",
+    "runtime-main.js": "/Demo-Fb-Post/static/js/runtime-main.971f2fd3.js",
+    "runtime-main.js.map": "/Demo-Fb-Post/static/js/runtime-main.971f2fd3.js.map",
+    "static/js/2.a3f07647.chunk.js": "/Demo-Fb-Post/static/js/2.a3f07647.chunk.js",
+    "static/js/2.a3f07647.chunk.js.map": "/Demo-Fb-Post/static/js/2.a3f07647.chunk.js.map",
+    "index.html": "/Demo-Fb-Post/index.html",
+    "static/css/main.26ad6034.chunk.css.map": "/Demo-Fb-Post/static/css/main.26ad6034.chunk.css.map",
+    "static/js/2.a3f07647.chunk.js.LICENSE.txt": "/Demo-Fb-Post/static/js/2.a3f07647.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.0da34753.js",
+    "static/js/runtime-main.971f2fd3.js",
     "static/js/2.a3f07647.chunk.js",
     "static/css/main.26ad6034.chunk.css",
     "static/js/main.8b4cdd79.chunk.js"
